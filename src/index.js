@@ -5,7 +5,8 @@ const app = express();
 // check out the example code in the `./routes/example.js` file.
 // You can use this code to separate your routes into different files
 // which makes it easier to manage your code as it grows.
-import { ExampleRouter } from "./routes/router_example.js";
+//import { ExampleRouter } from "./routes/router_example.js";
+const ExampleRouter = require("./routes/router_example.js");
 app.use("/", ExampleRouter);
 
 // Middleware is a function that runs on every request that is sent to your app.
